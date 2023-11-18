@@ -108,6 +108,9 @@ const Login = () => {
         </div>
         
       </div>
+             <div className='absolute bottom-0 text-[#fca311] bg-[#14213d] text-lg '>
+          <p>issam</p>
+      </div>
     </div>
   )
 }
