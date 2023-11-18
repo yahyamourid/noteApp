@@ -109,6 +109,10 @@ const Signup = () => {
         </div>
 
       </div>
+            </div>
+             <div className='absolute bottom-0 text-[#fca311] bg-[#14213d] text-lg w-full p-4 '>
+          <p>&copy; Created by Issam Lahrech - Anass Boupouchi - Asmaa Laili</p>
+      </div>
     </div>
 
   )
