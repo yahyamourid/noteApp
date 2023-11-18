@@ -259,7 +259,7 @@ const Home = () => {
   }
 
   return (
-    <div className='font-body flex flex-col'>
+    <div className='font-body'>
       <div className='flex justify-between items-center py-7 px-6 shadow max-h-20 min-h-20'>
         <p className='font-extrabold text-3xl  text-[#14213d] mr-6 '>Note<span className='text-[#fca311]'>App</span></p>
 
