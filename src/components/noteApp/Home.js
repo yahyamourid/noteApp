@@ -259,20 +259,10 @@ const Home = () => {
   }
 
   return (
-    <div className='font-body '>
+    <div className='font-body flex flex-col'>
       <div className='flex justify-between items-center py-7 px-6 shadow max-h-20 min-h-20'>
         <p className='font-extrabold text-3xl  text-[#14213d] mr-6 '>Note<span className='text-[#fca311]'>App</span></p>
 
-        <div className='flex items-center bg-[#e5e5e5] rounded-md text-lg w-2/5 mx-auto h-10'>
-          <FaSearch className='text-gray-400  ml-2' />
-          <input
-            type='text'
-            name='searchBar'
-            placeholder='Recherche'
-            className='bg-[#e5e5e5] outline-none ml-1'
-
-          />
-        </div>
         <div className='flex items-center'>
           {loadingUser ? (
             <p className='font-semibold text-[#14213d] text-3xl bg-[#FFB741]  rounded-full ml-20 uppercase h-16 w-16 items-center justify-center flex py-auto border-2 border-[#14213d]'><FaSpinner className='animate-spin' /></p>
@@ -443,7 +433,7 @@ const Home = () => {
         pauseOnHover
         theme="light"
       />
-
+     
     </div>
   )
 }
