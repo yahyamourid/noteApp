@@ -44,6 +44,7 @@ const Signup = () => {
         setShopwd(!showpwd)
     }
     return (
+        
     <div className='flex font-body bg-gradient-to-r from-[#fca311] items-center justify-center min-h-screen text-center'>
       <div className='flex   w-3/5  shadow-xl rounded-xl'>
         <div className='flex items-center flex-col bg-[#fca311] rounded-l-xl w-1/3'>
@@ -110,13 +111,13 @@ const Signup = () => {
 
       </div>
             
-             </div>
              <div className='absolute bottom-0 text-[#fca311] bg-[#14213d] text-lg w-full p-4 '>
+             
           <p>&copy; Created by Yahya-Mourid</p>
+            
+      </div >
       </div>
-    </div>
-    
-    
+      
 
   )
 }
