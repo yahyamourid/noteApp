@@ -91,7 +91,7 @@ const Login = () => {
           {error && <div className='text-lg text-red-600 font-medium bg-red-200 mx-auto my-2 w-full  rounded w-6/7 ' >{error}</div>}
          
           <button onClick={handleSubmit} className='text-lg text-[#14213d] mb-20 font-semibold   bg-[#fca311] w-1/5 mx-auto px-6 py-2 rounded-2xl hover:text-[#fca311] hover:bg-[#14213d] hover:scale-105 '>
-            {submit ? 'login' : 
+            {!submit ? 'login' : 
             <FaSpinner className='animate-spin' />}
           </button>
 
