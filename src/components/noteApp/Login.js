@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { FiMail, FiKey, FiEye } from 'react-icons/fi'
+import FaSpinner from 'react-icons/fa'
 
 const Login = () => {
   const [data, setData] = useState({
@@ -10,6 +11,7 @@ const Login = () => {
     password: ""
   })
   const [error, setError] = useState('')
+  const [submit, setSubmit] = useState(false)
 
   const [showpwd, setShopwd] = useState(false)
 
@@ -19,6 +21,7 @@ const Login = () => {
 
   const handleSubmit = async () => {
     try {
+      setSubmit(true)
       const url = 'https://note-app-backend-iota.vercel.app/users/auth'
       const res = await axios.post(url, data)
       localStorage.setItem("token", JSON.stringify(res.data));
@@ -88,7 +91,8 @@ const Login = () => {
           {error && <div className='text-lg text-red-600 font-medium bg-red-200 mx-auto my-2 w-full  rounded w-6/7 ' >{error}</div>}
          
           <button onClick={handleSubmit} className='text-lg text-[#14213d] mb-20 font-semibold   bg-[#fca311] w-1/5 mx-auto px-6 py-2 rounded-2xl hover:text-[#fca311] hover:bg-[#14213d] hover:scale-105 '>
-            login
+            {submit ? 'login' : 
+            sub<FaSpinner className='animate-spin' />}
           </button>
 
         </div>
