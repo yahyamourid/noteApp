@@ -29,6 +29,7 @@ const Login = () => {
       
       window.location = "/";
     } catch (error) {
+      setSubmit(false)
       console.log(error.response.data.message)
       if (error.response.status == 401){
         setError(error.response.data.message)
